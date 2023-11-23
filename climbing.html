@@ -1,41 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climbing</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="home.html"><button>All About Climbing</button></a>
-            <a href="bouldering.html" target="_blank"><button>Bouldering</button></a>
-            <a href="climbing.html" target="_blank"><button>Climbing</button></a>
+            <a href="index.html"><button>All About Climbing</button></a>
+            <a href="bouldering.html"><button>Bouldering</button></a>
+            <a href="climbing.html"><button>Climbing</button></a>
         </nav>
-
     </header>
 
     <main>
-        <h1>Climbing Courses</h1>
-        <p>Check out our course offer for all levels!</p>
-        <table>
-            <!-- Add two-three rows/courses (beginner, intermediate, advanced) with cols "Course name", "Day/hour", "Teacher" -->
-        </table>
-
-        <h2>Registration form</h2>
-        <form>
-            <!-- Add text fields like "First name", "Last name", selection field with drop-down options, button to submit -->
-        </form>
+        <div>
+            <h1>Climbing Courses</h1>
+            <hr>
+        </div>
+        <div>
+            <h2>Course overview </h2>
+            <p>Check out our course offer for all levels!</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course name</th>
+                        <th>Level</th>
+                        <th>Day / Hour</th>
+                        <th>Teacher</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blue course</td>
+                        <td>Beginner</td>
+                        <td>17.01.2024 11am</td>
+                        <td>Carla</td>
+                        <td><a href="https://maps.app.goo.gl/T5oxNSia8aAeE5RY9" target="_blank">Steinerne Stadt</a></td>
+                    </tr>
+                    <tr>
+                        <td>Red course</td>
+                        <td>Intermediate</td>
+                        <td>12.12.2023 9am</td>
+                        <td>Alex</td>
+                        <td><a href="https://maps.app.goo.gl/e1NADdaG7zbdsP5H6" target="_blank">Langkofelscharte</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Black course</td>
+                        <td>Professional</td>
+                        <td>18.03.2024 9am</td>
+                        <td>Marta</td>
+                        <td><a href="https://maps.app.goo.gl/rawBxq6tSpS7Xo9LA" target="_blank">Schuster Klettersteig</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Sign up</h2>
+            <p>Fill out the form to enroll in a course:</p>
+            <form class="enrollment-form" method="get" action="confirmation.html" target="_blank">
+                <div class="enrollment-form">
+                    <label for="first-name">First Name: </label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
+                </div>
+                <div class="enrollment-form">
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
+                </div>
+                <div class="enrollment-form">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="enrollment-form">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
+                </div>
+                <div class="enrollment-form">
+                    <label for="course">Course:</label>
+                    <select name="course" id="course" required>
+                        <option value="" selected disabled>Please select a course</option>
+                        <option value="blue-course">Blue course</option>
+                        <option value="red-course">Red course</option>
+                        <option value="black-course">Black course</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Enroll!</button>
+                </div>
+            </form>
+            <br>
+        </div>
     </main>
 
-    <hr>
     <footer>
-        <!-- Footer with bullet points with empty links to "Contact", "Blog", "Newsletter" -->
-        <ul>
-            <li><a href="#contact" target="_blank">Contact</a></li>
-            <li><a href="#blog" target="_blank">Blog</a></li><li></li>
-            <li><a href="#newsletter" target="_blank">Newsletter</a></li><li></li>
-        </ul>
+        <hr>
+        <p>The Climbing School<sup>&copy;</sup> // Straßmannstraße 123, 10234 Berlin</p>
     </footer>
 
 </body>
