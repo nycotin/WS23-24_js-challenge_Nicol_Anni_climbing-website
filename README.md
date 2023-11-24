@@ -1,8 +1,9 @@
 # climbing-website
 
 # This is an HTML website about climbing made by Nicol and Jannik.
-# It consists of three pages:
-# - home.html
+# It consists of four pages:
+# - index.html
 # - bouldering.html
 # - climbing.html
-# It also includes some tables and forms to register to the courses.
+# - confirmation.html
+# It also includes some tables, links and forms to register to the courses.
