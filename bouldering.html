@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Bouldering</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><button>All About Climbing</button></a>
-            <a href="bouldering.html"><button>Bouldering</button></a>
-            <a href="climbing.html"><button>Climbing</button></a>
-        </nav>
+    <header class="secondary">
+        <h1>Bouldering<br>Courses</h1>
     </header>
 
-    <main>
-        <div>
-            <h1>Bouldering Courses</h1>
-            <hr>
+    <nav>
+        <div class="container">
+            <a href="index.html"><button>Home</button></a>
+            <a href="bouldering.html"><button>Bouldering</button></a>
+            <a href="climbing.html"><button>Climbing</button></a>
         </div>
-        <div>
-            <h2>Course overview </h2>
+    </nav>
+
+    <main>
+        <div class="courses">
+            <h2>Course overview</h2>
             <p>Check out our course offer for all levels!</p>
             <table>
                 <thead>
-                    <tr>
+                    <tr id="header">
                         <th>Course name</th>
                         <th>Level</th>
                         <th>Day / hour</th>
@@ -66,48 +68,49 @@
                 </tbody>
             </table>
         </div>
-        <div>
-            <h2>Sign up</h2>
-            <p>Fill out the form to enroll in a course:</p>
-            <form class="enrollment-form" method="get" action="confirmation.html" target="_blank">
-                <div class="enrollment-form">
-                    <label for="first-name">First Name: </label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
-                </div>
-                <div class="enrollment-form">
-                    <label for="last-name">Last Name: </label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
-                </div>
-                <div class="enrollment-form">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="Enter email" required>
-                </div>
-                <div class="enrollment-form">
-                    <label for="phone">Phone Number: </label>
-                    <input class="enrollment-form" type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
-                </div>
-                <div class="enrollment-form">
-                    <label for="course">Course: </label>
-                    <select name="course" id="course" required>
-                        <option value="" selected disabled>Please select a course</option>
-                        <option value="bb">Introduction to Bouldering</option>
-                        <option value="bi">Bouldering - Level 2</option>
-                        <option value="ba">Bouldering - Level 3</option>
-                        <option value="bdd">Bouldering - Deep Dive</option>
-                    </select>
-                </div>
+        <div class="wrapper">
+            <div class='form-box'>
+                <h2>Sign up</h2>
+                <p>Fill out the form to enroll in a course:</p>
+                <form class="enrollment-form" method="get" action="confirmation.html" target="_blank">
+                    <div class="enrollment-form">
+                        <label for="first-name">First Name: </label><br>
+                        <input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
+                    </div>
+                    <div class="enrollment-form">
+                        <label for="last-name">Last Name: </label><br>
+                        <input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
+                    </div>
+                    <div class="enrollment-form">
+                        <label for="email">Email: </label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="enrollment-form">
+                        <label for="phone">Phone Number: </label><br>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="enrollment-form">
+                        <label for="course">Course: </label><br>
+                        <select name="course" id="course" required>
+                            <option value="" selected disabled>Please select a course</option>
+                            <option value="bb">Introduction to Bouldering</option>
+                            <option value="bi">Bouldering - Level 2</option>
+                            <option value="ba">Bouldering - Level 3</option>
+                            <option value="bdd">Bouldering - Deep Dive</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="submit-div">
+                        <button class="submit-btn"type="submit">Enroll!</button>
+                    </div>
+                </form>
                 <br>
-                <div>
-                    <button type="submit">Enroll!</button>
-                </div>
-            </form>
-            <br>
+            </div>
         </div>
     </main>
 
-    <hr>
     <footer>
-        <p>The Climbing School<sup>&copy;</sup> // Straßmannstraße 123, 10234 Berlin </p>
+        <p>The Climbing School<sup>&copy;</sup> // Straßmannstraße 123, 10234 Berlin</p>
     </footer>
 
 </body>

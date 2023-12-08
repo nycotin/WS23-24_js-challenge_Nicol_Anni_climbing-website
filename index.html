@@ -3,69 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>All About Climbing</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><button>All About Climbing</button></a>
-            <a href="bouldering.html"><button>Bouldering</button></a>
-            <a href="climbing.html"><button>Climbing</button></a>
-        </nav>
-    </header>
-
-    <main>
+    <header class="grid">
         <div>
-            <h1>All About Climbing</h1>
-            <p>Climbing offers a unique combination of physical and mental health benefits.
-            Regular climbing can improve your overall stamina. Evidence shows that physical activity of any kind can help people with mental health conditions like depression and anxiety. Climbing involves concentration and thought, as well as physical exercise.</p>
-            
-            <figure>
-                <img src="images/climbing-wall.jpg" alt="picture of indoor top roping" height="700" width="450"><img src="images/woman-bouldering.jpg" alt="picture of indoor bouldering">
-            </figure>
+            <h1>All<br>About<br>Climbing</h1>
         </div>
         <div>
-            <h2>Get Started with Climbing</h2>
-            <p>A growing number of people in search of a new sport are taking up climbing. Despite its image as an athletic sport, beginners will find it easy to get started.
-            Almost anyone can begin climbing. Most people start indoors at climbing walls. These offer ease of access, are subject to health and safety requirements and are not dependent on weather conditions. Here's a short list of <b>indoor climbing forms</b> that are a great way to get started with this discipline:</p>
-            <ul>
-                <li>Bouldering</li>
-                    <section class="description">
-                        <p>Bouldering is a form of climbing involving short routes at low heights. It is performed on small rock formations, such as large boulders, without the use of a harness or rope. Climbing is done over a crash pad to reduce the possibility of serious injury if the climber falls.</p>
-                        <figure>
-                            <img src="images/boulder-basics.png" alt="Bouldering">
-                            <figcaption>Bouldering</figcaption>
-                        </figure>
-                    </section>
-                <li>Climbing
-                    <ul>
-                        <li>Top Roping</li>
-                            <section class="description">
-                                <p>Top roping is where the climbing rope is already in place. The rope is threaded through an anchor at the top of the climbing wall. The person climbing "ties in" to one end of the rope, and the belayer manages the other end of the rope, taking in the slack as the climber ascends the climbing wall.</p>
-                                <figure>
-                                    <img src="images/top-rope-climbing.png" alt="Top Roping">
-                                    <figcaption>Top Roping</figcaption>
-                                </figure>
-                            </section>
-                        <li>Lead Climbing</li>
-                            <section class="description">
-                                <p>Lead climbing is a more advanced technique where the climber manages the rope themselves as they climb, clipping it as they move up the route (so it is not already threaded through an anchor before they start climbing). The belayer also needs to work in a more advanced way, ensuring the climber has enough rope to reach and clip safely but also not too much rope in case the climber falls.</p>
-                                <figure>
-                                    <img src="images/lead-climbing.png" alt="Lead Climbing">
-                                    <figcaption>Lead Climbing</figcaption>
-                                </figure>
-                            </section>
-                        <li>Free Climbing</li>
-                            <section class="description">
-                                <p>Free climbing is a form of rock climbing in which the climber can only use climbing equipment for climbing protection, but not as an aid to help in their progression in ascending the route. Free climbing, therefore, cannot use any of the tools that are used in aid climbing (like top roping or lead climbing) to help overcome the obstacles encountered while ascending a route.</p>
-                            </section>
-                    </ul>
-                </li>
-            </ul>
+            <img src="images/climbing-nature.jpg" alt="Man climbing in nature">
+        </div>
+        <div>
+            <img src="images/climbing-man.jpg" alt="Man climbing">
+        </div>
+        <div>
+            <img src="images/indoor-climbing.jpg" alt="Woman bouldering indoor">
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="index.html"><button>Home</button></a>
+            <a href="bouldering.html"><button>Bouldering</button></a>
+            <a href="climbing.html"><button>Climbing</button></a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="section1" class="content-box">
+            <h2>How<br>To Get<br>Started</h2>
+            <div id="intro" class="text">
+                <p>Climbing offers a unique combination of physical and mental health benefits.
+                Regular climbing can improve your overall stamina. Evidence shows that physical activity of any kind can help people with mental health conditions like depression and anxiety. Climbing involves concentration and thought, as well as physical exercise.</p>
+                <p>A growing number of people in search of a new sport are taking up climbing. Despite its image as an athletic sport, beginners will find it easy to get started.
+                Almost anyone can begin climbing. Most people start indoors at climbing walls. These offer ease of access, are subject to health and safety requirements and are not dependent on weather conditions. Here's a short list of <b>indoor climbing forms</b> that are a great way to get started with this discipline.</p>
+            </div>
+        </div>
+        <div id="section2" class="content-box">
+            <div id="bouldering" class="text">
+                <h3>Bouldering</h3>
+                <p>Bouldering is a form of climbing involving short routes at low heights. It is performed on small rock formations, such as large boulders, without the use of a harness or rope. Climbing is done over a crash pad to reduce the possibility of serious injury if the climber falls.</p>
+            </div>
+            <img src="images/bouldering-outdoor.jpg" alt="Woman Bouldering">
+        </div>
+        <div id="section3" class="content-box">
+            <img src="images/freeclimbing.jpg" alt="Man free climbing">
+            <div id="free-climbing" class="text">
+                <h3>Free Climbing</h3>
+                <p>Free climbing is a form of rock climbing in which the climber can only use climbing equipment for climbing protection, but not as an aid to help in their progression in ascending the route. Free climbing, therefore, cannot use any of the tools that are used in aid climbing (like top roping or lead climbing) to help overcome the obstacles encountered while ascending a route.</p>
+            </div>
+        </div>
+        <div id="section4" class="content-box">
+            <div id="top-roping" class="text">
+                <h3>Climbing</h3>
+                    <h4>Top Roping</h4>
+                        <p>Top roping is where the climbing rope is already in place. The rope is threaded through an anchor at the top of the climbing wall. The person climbing "ties in" to one end of the rope, and the belayer manages the other end of the rope, taking in the slack as the climber ascends the climbing wall.</p>
+            </div>
+            <img src="images/top-roping.jpg" alt="Top Roping">    
+        </div>
+        <div id="section5" class="content-box">
+            <img src="images/lead-climbing.jpg" alt="Lead Climbing">
+            <div id="lead-climbing" class="text">
+                    <h4>Lead Climbing</h4>
+                        <p>Lead climbing is a more advanced technique where the climber manages the rope themselves as they climb, clipping it as they move up the route (so it is not already threaded through an anchor before they start climbing). The belayer also needs to work in a more advanced way, ensuring the climber has enough rope to reach and clip safely but also not too much rope in case the climber falls.</p>
+            </div>
         </div>
     </main>
 
-    <hr>
     <footer>
         <p>The Climbing School<sup>&copy;</sup> // Straßmannstraße 123, 10234 Berlin</p>
     </footer>

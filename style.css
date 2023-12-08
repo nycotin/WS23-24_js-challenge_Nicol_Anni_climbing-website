@@ -1,0 +1,432 @@
+html {
+    background-color: #637E76;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+body {
+    color: #F8DFD4;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0 auto;
+}
+
+/* header and nav styles */
+.grid {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #637E76;
+}
+
+.grid div, .grid img {
+    width: 800px;
+    height: auto;
+    margin: calc(10.5%/16);
+}
+
+h1 {
+    font-size:7rem;
+    text-transform: uppercase;
+}
+
+.secondary {
+    padding-left: 5rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav div {
+    display:flex;
+    justify-content:space-around;
+}
+
+nav a {
+    width:33%;
+    text-align:center;
+    text-decoration: none;
+    line-height: 2rem;
+    padding: 0.5rem;
+}
+
+nav button {
+    position:relative;
+    color:rgb(189, 177, 177);
+    font-weight:500;
+    background-color:transparent;
+    text-transform: uppercase;
+    border:none;
+    cursor:pointer;
+    font-family: 'Exo 2', sans-serif;
+}
+
+nav button::after {
+     content:"";
+     position:absolute;
+     left: 0;
+     bottom:-6px;
+     width:100%;
+     height:3px;
+     background-color:rgb(189, 177, 177);
+     border-radius:5px;
+     transform:scaleX(0);
+     transition:transform .5s;
+     transform-origin:right;
+ }
+ 
+nav button:hover::after {
+     transform:scaleX(1);
+     transform-origin:left;
+ }
+
+nav, footer {
+    background-color: #F8DFD4;
+    width: 100%;
+    margin: 0;
+}
+
+/* main section styles */
+main {
+    padding: 0 5%;
+    line-height: 1.5;
+}
+
+.content-box {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-box img {
+    padding: 2rem;
+    width: 40%;
+}
+
+.text {
+    text-align: justify;
+    padding: 2rem;
+}
+
+h2 {
+    font-size:6rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 2%;
+}
+
+#intro {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+div#confirmation {
+    padding: 5%;
+
+}
+
+/* footer styles */
+footer {
+    color:rgb(189, 177, 177);
+    text-align: right;
+    position:sticky;
+    bottom: 0;
+}
+
+footer p {
+    line-height: 2rem;
+    padding: 0.5rem;
+}
+
+/* styles courses pages */
+.courses h2, .courses p,
+.wrapper h2, .wrapper p {
+    text-align:center;
+    padding:1rem;
+}
+
+/*table styles*/
+table{
+    margin:2rem auto; 
+    border-collapse:collapse;
+    width:800px;
+    height:200px;
+    border:1px solid #bdc3c7;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0,0,0,0);
+}
+
+tr#header{
+    background-color:#F8DFD4;
+    color:rgb(189, 177, 177);
+}
+
+tr:hover{
+    background-color:#7a928b;
+    transform:scale(1.02);
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0,0,0,0)
+}
+
+tr{
+    transition:all .2s ease-in;
+    cursor:pointer;
+}
+
+th,td{
+    padding:12px;
+    text-align:left;
+    border-bottom:1px solid #ddd;
+}
+
+td a {
+    color:#F8DFD4
+}
+
+
+/* forms styles */
+.wrapper {
+    position:relative;
+    width:500px;
+    height:640px;
+    margin:auto;
+    background-color:transparent;
+    border:2px solid rgba(255,255,255,.5);
+    border-radius:20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding:40px;
+}
+
+.form-box h2{
+    font-size:2em;
+    color:#F8DFD4;
+    text-align:center;
+}
+
+.enrollment-form{
+    position:relative;
+    width: 100%;
+    height: 50px;
+    border-bottom:2px solid #F8DFD4;
+    margin:0 0;
+}
+
+.enrollment-form label{
+    position:absolute;
+    /* top:50%;
+    left: 5px;
+    transform:translateY(-50%); */
+    font-size:1em;
+    color:#F8DFD4;
+    font-weight:700;
+    pointer-events: none;
+}
+
+.enrollment-form input:focus~label,
+.enrollment-form input:valid~label{
+ top:-5px;
+}
+
+.enrollment-form input, #course{
+    /* width: 100%;
+    height: 100%; */
+    background:transparent;
+    border: none;
+    outline:none;
+    font-size:1em;
+    color:#F8DFD4;
+    font-weight:500;
+    font-family: "Exo 2", sans-serif;
+}
+
+::placeholder {
+    color:#F8DFD4;
+    font-family: "Exo 2", sans-serif;
+    font-style: italic;
+}
+
+option {
+    background-color: #95989b;
+}
+
+.wrapper .form-box .submit-div{
+    text-align:center;
+    margin-top:-5px;
+}
+
+.wrapper .form-box .submit-div .submit-btn{
+    font-size:1em;
+    color:#F8DFD4;
+    font-weight:500;
+    padding:10px;
+    border-radius:10px;
+    border:none;
+}
+
+.submit-btn{
+    margin-top: 2rem;
+    background-color: #bdc3c7;
+}
+
+.submit-btn:hover{
+    background-color: #95989b;
+}
+
+
+/* responsive styles */
+@media (max-width: 1700px) {
+    .grid div, .grid img {
+        width: 600px;
+        height: auto;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size:5rem;
+    }
+
+    h2 {
+        font-size:4rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .grid div, .grid img {
+        width: 400px;
+        height: auto;
+    }
+    
+    h1 {
+        font-size:4.5rem;
+    }
+
+    h2 {
+        font-size:3.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav a {
+        padding: 1%;
+        width:25%
+    }
+
+    nav a:first-child {
+        margin-left: 0;
+    }
+    
+    nav div.container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .secondary {
+        padding: 0;
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .content-box {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1%;
+    }
+
+    .content-box div, img {
+        text-align: center;
+    }
+
+    .text {
+        padding: 1.5%;
+    }
+
+    #section3.content-box, #section5.content-box {
+        flex-direction: column-reverse;
+    }
+
+    table{
+        width:90%;
+    }
+
+    .wrapper, .form-box {
+        width:75%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .grid {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .grid div {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .grid img {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .content-box {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .text, h3, table, form {
+        font-size: 0.8rem;
+    }
+
+    table {
+        font-size: 11px;
+        width:75%;
+    }
+
+    .wrapper, .form-box {
+        width:68%;
+    }
+
+    nav, footer {
+        width: auto;
+        font-size: 12px;
+    }
+}
