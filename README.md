@@ -1,6 +1,6 @@
 # climbing-website-CCS
 
-# This is an HTML website about climbing styled by Nicol and Najma.
+# This is an HTML website about climbing styled by Nicol and Anni.
 # It consists of four pages:
 # - index.html
 # - bouldering.html
