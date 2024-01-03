@@ -10,3 +10,5 @@
 # 
 # Style was added as separate CSS file, which include:
 # navbar, external font, generic style, flex boxes, pseudo classes and media queries for responsive design.
+#
+# JS part to be added
