@@ -14,12 +14,10 @@
         <h1>Climbing<br>Courses</h1>
     </header>
 
-    <nav>
-        <div class="container">
-            <a href="index.html"><button>Home</button></a>
-            <a href="bouldering.html"><button>Bouldering</button></a>
-            <a href="climbing.html"><button>Climbing</button></a>
-        </div>
+    <nav class="container">
+        <a href="index.html"><button>Home</button></a>
+        <a href="bouldering.html"><button>Bouldering</button></a>
+        <a href="climbing.html"><button>Climbing</button></a>
     </nav>
 
     <main>
@@ -69,27 +67,27 @@
                 <form class="enrollment-form" method="get" action="confirmation.html" target="_blank">
                     <div class="enrollment-form">
                         <label for="first-name">First Name: </label><br>
-                        <input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
+                        <input type="text" name="first-name" id="first-name" placeholder="Enter first name" >
                     </div>
                     <div class="enrollment-form">
                         <label for="last-name">Last Name: </label><br>
-                        <input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
+                        <input type="text" name="last-name" id="last-name" placeholder="Enter last name" >
                     </div>
                     <div class="enrollment-form">
                         <label for="email">Email: </label><br>
-                        <input type="email" name="email" id="email" placeholder="Enter email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter email" >
                     </div>
                     <div class="enrollment-form">
                         <label for="phone">Phone Number: </label><br>
-                        <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter phone number" >
                     </div>
                     <div class="enrollment-form">
                         <label for="course">Course:</label><br>
-                        <select name="course" id="course" required>
+                        <select name="course" id="course" >
                             <option value="" selected disabled>Please select a course</option>
-                            <option value="blue-course">Blue course</option>
-                            <option value="red-course">Red course</option>
-                            <option value="black-course">Black course</option>
+                            <option value="Blue course">Blue course</option>
+                            <option value="Red course">Red course</option>
+                            <option value="Black course">Black course</option>
                         </select>
                     </div>
                     <br>
@@ -105,6 +103,8 @@
     <footer>
         <p>The Climbing School<sup>&copy;</sup> // Straßmannstraße 123, 10234 Berlin</p>
     </footer>
- 
+
+    <script src="app.js"></script>
+
 </body>
 </html>

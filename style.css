@@ -42,11 +42,8 @@ h1 {
 nav {
     position: sticky;
     top: 0;
-}
-
-nav div {
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -59,7 +56,7 @@ nav a {
 
 nav button {
     position:relative;
-    color:rgb(189, 177, 177);
+    color:rgb(114, 113, 113);
     font-weight:500;
     background-color:transparent;
     text-transform: uppercase;
@@ -75,7 +72,7 @@ nav button::after {
      bottom:-6px;
      width:100%;
      height:3px;
-     background-color:rgb(189, 177, 177);
+     background-color:rgb(114, 113, 113);
      border-radius:5px;
      transform:scaleX(0);
      transition:transform .5s;
@@ -142,7 +139,7 @@ div#confirmation {
 
 /* footer styles */
 footer {
-    color:rgb(189, 177, 177);
+    color:rgb(114, 113, 113);
     text-align: right;
     position:sticky;
     bottom: 0;
@@ -172,18 +169,14 @@ table{
 
 tr#header{
     background-color:#F8DFD4;
-    color:rgb(189, 177, 177);
+    color:rgb(114, 113, 113);
 }
 
-tr:hover{
+tbody tr:hover{
     background-color:#7a928b;
     transform:scale(1.02);
-    box-shadow:2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0,0,0,0)
-}
-
-tr{
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0,0,0,0);
     transition:all .2s ease-in;
-    cursor:pointer;
 }
 
 th,td{
@@ -199,11 +192,10 @@ td a {
 
 /* forms styles */
 .wrapper {
-    position:relative;
     width:500px;
     height:640px;
     margin:auto;
-    background-color:transparent;
+    background-color: #7a928b;
     border:2px solid rgba(255,255,255,.5);
     border-radius:20px;
     box-shadow: 0 0 30px rgba(0,0,0,.5);
@@ -284,7 +276,7 @@ option {
 
 .submit-btn{
     margin-top: 2rem;
-    background-color: #bdc3c7;
+    background-color: rgb(114, 113, 113);
 }
 
 .submit-btn:hover{
