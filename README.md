@@ -8,6 +8,7 @@ This project consists of four HTML pages, made in collaboration with Jannik:
 - bouldering.html
 - climbing.html
 - confirmation.html
+
 It also includes some tables, links and forms to register to the courses.
 
 ### CSS
@@ -18,7 +19,7 @@ The pages where styled with a separate CSS file, created in collaboration with N
 A JavaScript file was added for improved client-side form validation, which includes the display of error messages implemented by:
 - disabling the submit button;
 - turning background color of input to red;
-- displying of clear error message.
+- displying of clear error message;
 
 The error messages are triggered on submission if one of the following conditions applies:
 - input/select value left empty;
